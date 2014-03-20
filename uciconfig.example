@@ -1,0 +1,10 @@
+#!/bin/sh
+
+
+touch /etc/config/rele
+
+uci set rele.user=user
+uci set rele.pass=secret
+uci set rele.url=http://127.0.0.1/arduino/digital/13
+uci commit
+

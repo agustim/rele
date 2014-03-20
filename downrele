@@ -1,0 +1,9 @@
+#!/bin/sh
+
+. /etc/rele.conf
+                                                                                                
+if (curl -u $USER:$PASS "${URL_RELE}" 2>/dev/null |grep -q "to 1") ;      
+then                                                               
+    curl -u $USER:$PASS "${URL_RELE}/0"      
+fi  
+
